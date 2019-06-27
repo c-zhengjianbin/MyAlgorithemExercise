@@ -22,7 +22,7 @@ public class Main {
      */
     public static void main(String[] args){
         int[] nums = new int[]{2, 7, 11, 15};
-        int[] result = violenceWay(nums, 17);
+        int[] result = useTwoMap(nums, 18);
         System.out.println(Arrays.toString(result));
     }
 
@@ -47,17 +47,20 @@ public class Main {
     /**
      *
      * 使用两次Map：
-     *    使用暴力破解方式遍历，时间复杂度为O(n^2)。复杂度为n^2 由于第二个for 循环导致。
+     *    使用暴力遍历，时间复杂度为O(n^2)。复杂度为n^2 由于第二个for 循环导致。
      * 在查找时如果使用Map 则可将n^2 降至n 。
      *
      */
     public static int[] useTwoMap(int[] nums, int target){
         Map<Integer, Integer> indexAndValue = new HashMap<>();
         for(int i = 0; i < nums.length; i++){
-            indexAndValue.put(i, nums[i]);
+            indexAndValue.put(nums[i], i);
         }
         for(int j = 0; j < nums.length; j++){
-
+            int targetValue = target - nums[j];
+            if(indexAndValue.containsKey(targetValue)){
+                return new int[]{j, indexAndValue.get(targetValue)};
+            }
         }
         return new int[]{};
     }
