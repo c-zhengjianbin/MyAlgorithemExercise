@@ -58,6 +58,7 @@ public class Main {
             carry = sum / 10;
             curr.setNext(new LinkNode(sum % 10));
             curr = curr.getNext();
+            //当p、q 为null 时，后面没有结点
             if(p != null){
                 p = p.getNext();
             }

@@ -11,3 +11,13 @@
      * 提高算法能力。在生产环境中，写出稳健代码。
      * 提高抽象、逻辑能力。在生产环境中，基于业务设计稳健的代码逻辑。 
      
+* ### ☘️目录:
+     * 项目结构与包名注释🌴（题目、解题思路在Main.java中）。
+     ```
+    ├── MyalgorithemexerciseApplication.java-----SpringBoot 启动类
+    ├── twoadd-----两数相加
+    │   ├── LinkNode.java
+    │   └── Main.java
+    └── twosum-----两数之和
+        └── Main.java
+     ```
