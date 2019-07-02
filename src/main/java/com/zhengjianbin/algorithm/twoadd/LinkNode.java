@@ -16,8 +16,9 @@ public class LinkNode {
         return next;
     }
 
-    public void setNext(LinkNode next) {
+    public LinkNode setNext(LinkNode next) {
         this.next = next;
+        return this;
     }
 
     public Integer getValue() {

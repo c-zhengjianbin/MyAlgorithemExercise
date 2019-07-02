@@ -18,8 +18,13 @@ public class Main {
      *
      */
     public static void main(String[] args){
-        int carry = 9 / 10;
-        System.out.println(12 / 10);
+        LinkNode firset = new LinkNode(2);
+        firset.setNext(new LinkNode(4).setNext(new LinkNode(3)));
+        LinkNode second = new LinkNode(5);
+        second.setNext(new LinkNode(6).setNext(new LinkNode(4)));
+        System.out.println(1);
+        LinkNode result = twoLinkNodeAdd(firset, second);
+        System.out.println(2);
     }
 
     /**
@@ -43,7 +48,27 @@ public class Main {
      *
      */
     public static LinkNode twoLinkNodeAdd(LinkNode firstLinknode, LinkNode secondLinknode){
-        return null;
+        LinkNode result = new LinkNode(0);
+        LinkNode p = firstLinknode, q = secondLinknode, curr = result;
+        int carry = 0;
+        while (p != null || q != null){
+            int x = (p != null) ? p.getValue() : 0;
+            int y = (q != null) ? q.getValue() : 0;
+            int sum = x + y + carry;
+            carry = sum / 10;
+            curr.setNext(new LinkNode(sum % 10));
+            curr = curr.getNext();
+            if(p != null){
+                p = p.getNext();
+            }
+            if(q != null){
+                q = q.getNext();
+            }
+        }
+        if(carry > 0){
+            curr.setNext(new LinkNode(carry));
+        }
+        return result.getNext();
     }
 
 }
