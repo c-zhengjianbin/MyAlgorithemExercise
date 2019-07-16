@@ -1,4 +1,4 @@
-package com.zhengjianbin.algorithm.twosum;
+package com.zhengjianbin.algorithm.arralgorithm.twosum;
 
 import java.util.Arrays;
 import java.util.HashMap;

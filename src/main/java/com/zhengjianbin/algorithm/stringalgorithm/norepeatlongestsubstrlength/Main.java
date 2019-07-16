@@ -1,4 +1,4 @@
-package com.zhengjianbin.algorithm.norepeatlongestsubstrlength;
+package com.zhengjianbin.algorithm.stringalgorithm.norepeatlongestsubstrlength;
 
 import java.util.HashSet;
 import java.util.Set;

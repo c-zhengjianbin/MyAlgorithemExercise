@@ -1,4 +1,6 @@
-package com.zhengjianbin.algorithm.twoadd;
+package com.zhengjianbin.algorithm.linkedlistalgorithm.twoadd;
+
+import com.zhengjianbin.algorithm.linkedlistalgorithm.twoadd.LinkNode;
 
 /**
  * Created by zhengjianbin on 2019/7/2.

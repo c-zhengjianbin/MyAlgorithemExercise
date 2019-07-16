@@ -1,4 +1,4 @@
-package com.zhengjianbin.algorithm.longestpalindrome;
+package com.zhengjianbin.algorithm.stringalgorithm.longestpalindrome;
 
 /**
  * Created by zhengjianbin on 2019/7/9.
