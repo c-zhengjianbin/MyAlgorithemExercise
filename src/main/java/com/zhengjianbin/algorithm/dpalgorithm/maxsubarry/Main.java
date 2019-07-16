@@ -19,7 +19,9 @@ public class Main {
      *
      */
     public static void main(String[] args){
-
+        int[] input = {-2, 1, -3, 4, -1, 2, 1, -5, 15};
+        int result = maxsubarry(input);
+        System.out.println(result);
     }
 
     /**
@@ -32,13 +34,22 @@ public class Main {
      * 元素为负数也没关系，一定要保证子序列在添加下一个元素时，值大于0 。
      *
      * 伪代码：
-     *
-     *
-     *
+     *    1.遍历输入的数组，进行连续子序列求和
+     *    2.使用sum 变量，记录当前相加的子序列和
+     *   *3.每一次求和，使用变量result 记录，并和sum 比较获取最大值。
      */
     public static int maxsubarry(int[] nums){
-
-        return 0;
+        int sum = 0;
+        int result = nums[0];
+        for(int num : nums){
+            if(sum >= 0){
+                sum+=num;
+            }else{
+                sum = num;
+            }
+            result = Math.max(result, sum);
+        }
+        return result;
     }
 
 }
