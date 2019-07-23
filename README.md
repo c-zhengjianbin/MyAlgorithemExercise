@@ -20,6 +20,8 @@
         * [两数相加](src/main/java/com/zhengjianbin/algorithm/linkedlistalgorithm/twoadd/Main.java)
      * 字符串类型
         * [求字符串中最大子串长度](src/main/java/com/zhengjianbin/algorithm/stringalgorithm/norepeatlongestsubstrlength/Main.java))
+     * 队列类型
+        * [求3秒内的请求数量](src/main/java/com/zhengjianbin/algorithm/queuealgorithm/getrecentreqcounter/Main.java))
 * ### ☘️项目结构
      * 项目结构与包名注释🌴（题目、解题思路在Main.java中）。
      ```
@@ -36,6 +38,10 @@
         │   └── twoadd
         │       ├── LinkNode.java
         │       └── Main.java
+        ├── queuealgorithm-----链表型算法
+        │   └── getrecentreqcounter
+        │       ├── Main.java
+        │       └── RecentCounter.java
         ├── stringalgorithm-----字符串型算法
         │   ├── longestpalindrome
         │   │   └── Main.java
