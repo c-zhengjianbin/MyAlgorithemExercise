@@ -19,17 +19,15 @@ public class Foo {
      * 自己是否执行，而不是唤醒指定等待线程。
      *
      *
-     *
-     *
+     * 解法2：
+     *    使用屏障策略。通过引入CountDownLatch 来实现屏障功能。{@link FooUseCountDownLatch}
      *
      */
     public Foo() {
     }
 
     public void first(Runnable printFirst) throws InterruptedException{
-        //TODO
         synchronized (barrier){
-
            // printFirst.run() outputs "first". Do not change or remove this line.
            printFirst.run();
            firstIsEnd = true;
@@ -39,7 +37,6 @@ public class Foo {
     }
 
     public void second(Runnable secondFirst) throws InterruptedException{
-        //TODO
         synchronized (barrier){
             while (!firstIsEnd){
                 barrier.wait();
@@ -54,7 +51,6 @@ public class Foo {
     }
 
     public void third(Runnable thirdFirst) throws InterruptedException{
-        //TODO
         synchronized (barrier){
             while(!secondIsEnd){
                 System.out.println("third：：second 未执行完，进入等待状态.....");

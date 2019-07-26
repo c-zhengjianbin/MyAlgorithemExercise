@@ -42,7 +42,10 @@ public class Main {
      *
      */
     public static void main(String[] args) throws InterruptedException {
-        Foo foo = new Foo();
+//        Foo foo = new Foo();
+
+        FooUseCountDownLatch foo = new FooUseCountDownLatch();
+
         Thread t1 = new Thread(() -> {
             try {
                 foo.first(() -> System.out.println("first"));
@@ -67,9 +70,8 @@ public class Main {
             }
         });
         t3.start();
-        t2.start();
         t1.start();
-
+        t2.start();
     }
 
 }
