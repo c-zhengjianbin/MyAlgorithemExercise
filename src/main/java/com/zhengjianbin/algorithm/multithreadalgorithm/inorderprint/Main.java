@@ -42,8 +42,17 @@ public class Main {
      *
      */
     public static void main(String[] args) throws InterruptedException {
-//        Foo foo = new Foo();
+        /**
+         * 解法一{@link Foo}
+         *
+         * Foo foo = new Foo();
+         *
+         */
 
+        /**
+         * 解法二{@link FooUseCountDownLatch}
+         *
+         */
         FooUseCountDownLatch foo = new FooUseCountDownLatch();
 
         Thread t1 = new Thread(() -> {
