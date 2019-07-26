@@ -1,5 +1,9 @@
 package com.zhengjianbin.algorithm.multithreadalgorithm.inorderprint;
 
+import com.sun.tools.javac.comp.Flow;
+import io.reactivex.Flowable;
+import io.reactivex.functions.Consumer;
+
 /**
  * Created by zhengjianbin on 2019/7/23.
  */
@@ -37,7 +41,34 @@ public class Main {
      *    你看到的输入格式主要是为了确保测试的全面性。
      *
      */
-    public static void main(String[] args){
+    public static void main(String[] args) throws InterruptedException {
+        Foo foo = new Foo();
+        Thread t1 = new Thread(() -> {
+            try {
+                foo.first(() -> System.out.println("first"));
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        });
+
+        Thread t2 = new Thread(() -> {
+            try {
+                foo.second(() -> System.out.println("second"));
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        });
+
+        Thread t3 = new Thread(() -> {
+            try {
+                foo.third(() -> System.out.println("third"));
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        });
+        t3.start();
+        t2.start();
+        t1.start();
 
     }
 

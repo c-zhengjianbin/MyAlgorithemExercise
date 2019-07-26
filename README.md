@@ -22,6 +22,8 @@
         * [求字符串中最大子串长度](src/main/java/com/zhengjianbin/algorithm/stringalgorithm/norepeatlongestsubstrlength/Main.java)
      * 队列类型
         * [求3秒内的请求数量](src/main/java/com/zhengjianbin/algorithm/queuealgorithm/getrecentreqcounter/Main.java)
+     * 多线程类型
+         * [按序打印](src/main/java/com/zhengjianbin/algorithm/multithreadalgorithm/inorderprint/Main.java)       
 * ### ☘️项目结构
      * 项目结构与包名注释🌴（题目、解题思路在Main.java中）。
      ```
@@ -37,6 +39,10 @@
         ├── linkedlistalgorithm-----链表型算法
         │   └── twoadd
         │       ├── LinkNode.java
+        │       └── Main.java
+        ├── multithreadalgorithm-----多线程算法
+        │   └── inorderprint
+        │       ├── Foo.java
         │       └── Main.java
         ├── queuealgorithm-----链表型算法
         │   └── getrecentreqcounter
