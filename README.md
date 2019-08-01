@@ -24,7 +24,8 @@
         * [求3秒内的请求数量](src/main/java/com/zhengjianbin/algorithm/queuealgorithm/getrecentreqcounter/Main.java)
      * 多线程类型
          * [按序打印](src/main/java/com/zhengjianbin/algorithm/multithreadalgorithm/inorderprint/Main.java)
-         * [交替打印](src/main/java/com/zhengjianbin/algorithm/multithreadalgorithm/alternatelyprint/Main.java)                
+         * [交替打印](src/main/java/com/zhengjianbin/algorithm/multithreadalgorithm/alternatelyprint/Main.java)     
+         * [打印零奇数偶数](src/main/java/com/zhengjianbin/algorithm/multithreadalgorithm/printzerooddeven/Main.java)  
 * ### ☘️项目结构
      * 项目结构与包名注释🌴（题目、解题思路在Main.java中）。
      ```
@@ -42,9 +43,16 @@
         │       ├── LinkNode.java
         │       └── Main.java
         ├── multithreadalgorithm-----多线程算法
-        │   └── inorderprint
-        │       ├── Foo.java
-        │       └── Main.java
+        │   ├── alternatelyprint
+        │   │   ├── FooBar.java
+        │   │   └── Main.java
+        │   ├── inorderprint
+        │   │   ├── Foo.java
+        │   │   ├── FooUseCountDownLatch.java
+        │   │   └── Main.java
+        │   └── printzerooddeven
+        │       ├── Main.java
+        │       └── ZeroOddEven.java
         ├── queuealgorithm-----链表型算法
         │   └── getrecentreqcounter
         │       ├── Main.java
