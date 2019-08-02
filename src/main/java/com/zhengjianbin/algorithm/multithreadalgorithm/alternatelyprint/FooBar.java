@@ -20,8 +20,6 @@ public class FooBar {
      *    解法1的问题：总感觉使用while(!isRun){} 这种等待方式有点儿无赖，让线程进入无线循环，这是需要优化的地方。
      *    TODO ： 需想法解决此问题。
      *
-     *
-     *
      * 错误思路：
      *    使用CyclicBarrier 的错误思路：CyclicBarrier 不能保证线程顺序，它只是保证所有线程同时
      * 到达某个点。核心在于：CyclicBarrier 保证的是线程同时到达某一点，而不是保证顺序。如果需要
