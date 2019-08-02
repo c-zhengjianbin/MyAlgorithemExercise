@@ -23,9 +23,9 @@
      * 队列类型
         * [求3秒内的请求数量](src/main/java/com/zhengjianbin/algorithm/queuealgorithm/getrecentreqcounter/Main.java)
      * 多线程类型
-         * [按序打印](src/main/java/com/zhengjianbin/algorithm/multithreadalgorithm/inorderprint/Main.java)
-         * [交替打印](src/main/java/com/zhengjianbin/algorithm/multithreadalgorithm/alternatelyprint/Main.java)     
-         * [打印零奇数偶数](src/main/java/com/zhengjianbin/algorithm/multithreadalgorithm/printzerooddeven/Main.java)  
+         * [按序打印](src/main/java/com/zhengjianbin/algorithm/multithreadalgorithm/inorderprint/Foo.java)
+         * [交替打印](src/main/java/com/zhengjianbin/algorithm/multithreadalgorithm/alternatelyprint/FooBar.java)     
+         * [打印零奇数偶数](src/main/java/com/zhengjianbin/algorithm/multithreadalgorithm/printzerooddeven/ZeroOddEven.java)
 * ### ☘️项目结构
      * 项目结构与包名注释🌴（题目、解题思路在Main.java中）。
      ```
