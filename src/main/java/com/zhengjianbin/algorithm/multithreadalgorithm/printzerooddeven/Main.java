@@ -31,6 +31,34 @@ public class Main {
      *
      */
     public static void main(String[] args){
+        ZeroOddEven zeroOddEven = new ZeroOddEven(5);
+
+        Thread t1 = new Thread(() -> {
+            try {
+                zeroOddEven.zero();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        });
+
+        Thread t2 = new Thread(() -> {
+            try {
+                zeroOddEven.odd();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        });
+
+        Thread t3 = new Thread(() -> {
+            try {
+                zeroOddEven.even();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        });
+        t3.start();
+        t1.start();
+        t2.start();
 
     }
 
