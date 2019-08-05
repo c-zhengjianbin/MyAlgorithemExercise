@@ -33,7 +33,7 @@
 
 * ### ☘️涉及Java 类文档翻译
      * 多线程
-       * [Semaphore](src/main/java/com/zhengjianbin/algorithm/translation/multithread/Semaphore.md)
+       * [Semaphore](src/main/java/com/zhengjianbin/translation/multithread/Semaphore.md)
 
 * ### ☘️项目结构
      * 项目结构与包名注释🌴（题目、解题思路在Main.java中）。
