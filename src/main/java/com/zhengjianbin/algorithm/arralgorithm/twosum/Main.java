@@ -19,7 +19,7 @@ public class Main {
      *         因为 nums[0] + nums[1] = 2 + 7 = 9所以返回 [0, 1]
      * TODO 隐患：无法解决数组中出现数字重复的问题 [2,7,7,15]。
      *
-     * @param args
+     *
      */
     public static void main(String[] args){
         int[] nums = new int[]{2, 5, 7, 11, 15};

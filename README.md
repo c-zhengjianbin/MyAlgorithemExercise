@@ -14,6 +14,7 @@
 * ### ☘️算法摘要
      * 数组类型
         * [两数求和](src/main/java/com/zhengjianbin/algorithm/arralgorithm/twosum/Main.java)
+        * [三数之和](src/main/java/com/zhengjianbin/algorithm/arralgorithm/threesum/Main.java)     
      * 动态规划
         * [数组中最大连续序列求和](src/main/java/com/zhengjianbin/algorithm/dpalgorithm/maxsubarry/Main.java)
      * 链表类型
