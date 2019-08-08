@@ -49,6 +49,9 @@ public class Main {
      *    
      * 复杂度：
      *    时间复杂度为O(n)，空间复杂度为(n/2)
+     *
+     * TODO：
+     *    使用链表反转进行优化。
      */
     public static boolean isPalindrome(LinkNode head){
         LinkNode slow = head, fast = head;
