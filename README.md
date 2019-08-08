@@ -19,6 +19,7 @@
         * [数组中最大连续序列求和](src/main/java/com/zhengjianbin/algorithm/dpalgorithm/maxsubarry/Main.java)
      * 链表类型
         * [两数相加](src/main/java/com/zhengjianbin/algorithm/linkedlistalgorithm/twoadd/Main.java)
+        * [回文链表判断](src/main/java/com/zhengjianbin/algorithm/linkedlistalgorithm/ispalindrome/Main.java)
      * 字符串类型
         * [求字符串中最大子串长度](src/main/java/com/zhengjianbin/algorithm/stringalgorithm/norepeatlongestsubstrlength/Main.java)
      * 队列类型
