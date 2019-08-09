@@ -35,6 +35,16 @@ public class Main {
      *            b.设置当前的next 为前驱结点
      *            c.设置前驱结点为当前节点
      *            d.将当前节点设置为 当前节点的next结点。
+     *
+     * 问题1：
+     *    每个结点反转后，原来的结点结构发生了怎样的变化？
+     *
+     * 回答1：
+     *    由于head 上的结点，在将head.next 结点交给next 变量保存并设置null后。和前一个结点已经
+     * 断了联系。当执行完最后一个结点时，head 上已经没有了结点。（当然每个结点对象还是在内存中的）
+     *    新的结点都会重新依附到pre 结点上。每次执行完后，都会把pre 上的结点放到head 当前
+     * 结点上，再把结点赋值到pre 结点上，以实现链表反转。
+     *
      */
     public static LinkNode reverseNode(LinkNode head) throws CloneNotSupportedException {
         if(head == null || head.getNext() == null){
