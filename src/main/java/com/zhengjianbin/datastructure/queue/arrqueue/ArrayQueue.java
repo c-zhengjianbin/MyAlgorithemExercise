@@ -50,12 +50,43 @@ public class ArrayQueue {
         this.items = new String[capacity];
     }
 
-    public boolean enter(String item){
+    public boolean v1Enter(String item){
         if(tail == capacity) return false;
         if(StringUtils.isEmpty(item)) return false;
         items[tail] = item;
         tail++;
         return true;
+    }
+
+    /**
+     * 在入队列时判断是否有空间，如果没有空间，进行数据移动
+     */
+    public boolean v2Enter(String item){
+        if(tail == capacity && head == 0) return false;
+        if(StringUtils.isEmpty(item)) return false;
+        if(tail == capacity){
+            if(head != 0){
+                //数据迁移
+                for(int i = head; i < tail; i++){
+                    items[i-head] = items[i];
+                    //数据前移以后，该数据的位置上便是null。因为挪走了。
+                    items[i] = null;
+                }
+                tail -= head;
+                head = 0;
+            }
+        }
+        items[tail] = item;
+        tail++;
+        return true;
+    }
+
+    public String v2Out(){
+        if(head == capacity) return  "";
+        String headData = items[head];
+        items[head] = null;
+        head++;
+        return headData;
     }
 
     /*

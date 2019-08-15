@@ -11,16 +11,12 @@ public class Main {
     public static void main(String[] args){
         ArrayQueue queue = new ArrayQueue(5);
         for(int i = 0; i < 5; i++){
-            queue.enter(Integer.toString(i));
+            queue.v2Enter(Integer.toString(i));
         }
         System.out.println(queue.toString());
-        queue.v1Out();
-        queue.v1Out();
-        queue.v1Out();
-        queue.enter(Integer.toString(5));
-        queue.enter(Integer.toString(6));
-        queue.enter(Integer.toString(7));
-        queue.enter(Integer.toString(8));
+        queue.v2Out();
+        queue.v2Out();
+        System.out.println(queue.v2Enter(Integer.toString(5)));
         System.out.println(queue.toString());
     }
 
