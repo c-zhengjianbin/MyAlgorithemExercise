@@ -43,7 +43,8 @@
      * 链表类型
        * [单链表反转](src/main/java/com/zhengjianbin/datastructure/linknode/linknodereverse/Main.java)
        * [求链表中间结点](src/main/java/com/zhengjianbin/datastructure/linknode/linknodemiddle/Main.java)
-       
+     * 队列类型
+       * [数组实现链表](src/main/java/com/zhengjianbin/datastructure/queue/arrqueue/ArrayQueue.java)
 * ### ☘️项目结构
      * 项目结构与包名注释🌴（题目、解题思路在Main.java中）。
      ```
