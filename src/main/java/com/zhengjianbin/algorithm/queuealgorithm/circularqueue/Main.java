@@ -33,8 +33,12 @@ public class Main {
      *   circularQueue.enQueue(4);  // 返回 true
      *   circularQueue.Rear();  // 返回 4
      *
-     * 注意：
-     *
+     * 解读
+     *   关于此题目，对于这个循环队列的题目。一开始还以为是环形队列的题，在仔细看了其它leetcode 的思路以后。发现
+     * 这个所谓的循环队列，是将队首头部的剩余空间利用起来，这不是咱们使用数组实现队列过程中遇到的问题吗？如何利用好
+     * 空闲的空间。所以关于此题的解法，请参考：
+     *   https://github.com/c-zhengjianbin/MyAlgorithemExercise/blob/master/src/main/java/com/zhengjianbin/datastructure/queue/arrqueue/ArrayQueue.java
+     *   (PS：竟然没有好好读题，坑了坑了)
      *
      */
     public static void main(String[] args){
