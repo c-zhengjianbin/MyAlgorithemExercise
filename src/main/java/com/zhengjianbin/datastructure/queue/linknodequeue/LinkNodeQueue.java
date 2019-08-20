@@ -20,6 +20,11 @@ public class LinkNodeQueue {
      * 一个新的结点即可。
      *   --出队：在出队时，只需设置head 结点即可。在这里只是出队的方式不同而已，数组采用下标，链表则直接
      * 使用将头结点赋值。
+     *
+     * 解读：
+     *    链表实现队列时，重点在于新的结点入队时，如何将新结点与前面结点关联。下面代码将借助一个current 结
+     * 点，来实现与原有数据关联。
+     *
      */
 
     private LinkNode head;
@@ -49,10 +54,8 @@ public class LinkNodeQueue {
         LinkNode headNode = head;
         if(headNode.getNext() != null){
             head = headNode.getNext();
-            return headNode;
-        }else{
-            return headNode;
         }
+        return headNode;
     }
 
 }
