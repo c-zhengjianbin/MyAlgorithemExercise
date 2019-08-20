@@ -12,6 +12,9 @@ public class LinkNode {
         this.value = value;
     }
 
+    public LinkNode() {
+    }
+
     public LinkNode getNext() {
         return next;
     }
