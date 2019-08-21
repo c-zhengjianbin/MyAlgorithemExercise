@@ -47,6 +47,8 @@
        * [数组实现队列](src/main/java/com/zhengjianbin/datastructure/queue/arrqueue/ArrayQueue.java)
        * [链表实现队列](src/main/java/com/zhengjianbin/datastructure/queue/linknodequeue/LinkNodeQueue.java)
        * [实现循环队列](src/main/java/com/zhengjianbin/algorithm/queuealgorithm/circularqueue/Main.java)
+     * 排序算法
+       * [冒泡排序](src/main/java/com/zhengjianbin/datastructure/sort/bubblesort/Main.java)
 * ### ☘️项目结构
      * 项目结构与包名注释🌴（题目、解题思路在Main.java中）。
      ```
