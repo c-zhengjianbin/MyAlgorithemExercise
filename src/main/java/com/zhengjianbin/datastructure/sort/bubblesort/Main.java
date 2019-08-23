@@ -43,6 +43,7 @@ public class Main {
             }
             if(!isSwap){
                 break;
+
             }
         }
         return data;
