@@ -90,4 +90,77 @@
         │       └── Main.java
         └── test
             └── Main.java
+            
+            
+ ├── algorithm
+ │   ├── MyalgorithemexerciseApplication.java
+ │   ├── arralgorithm-----数组类型算法
+ │   │   ├── other
+ │   │   ├── threesum
+ │   │   │   └── Main.java
+ │   │   └── twosum
+ │   │       └── Main.java
+ │   ├── dpalgorithm-----动态规划类型算法
+ │   │   ├── 0、动态规划简介.md
+ │   │   └── maxsubarry
+ │   │       └── Main.java
+ │   ├── linkedlistalgorithm-----链表型算法
+ │   │   ├── ispalindrome
+ │   │   │   └── Main.java
+ │   │   └── twoadd
+ │   │       ├── LinkNode.java
+ │   │       └── Main.java
+ │   ├── multithreadalgorithm-----多线程算法
+ │   │   ├── alternatelyprint
+ │   │   │   ├── FooBar.java
+ │   │   │   └── Main.java
+ │   │   ├── inorderprint
+ │   │   │   ├── Foo.java
+ │   │   │   ├── FooUseCountDownLatch.java
+ │   │   │   └── Main.java
+ │   │   └── printzerooddeven
+ │   │       ├── Main.java
+ │   │       └── ZeroOddEven.java
+ │   ├── queuealgorithm-----队列型算法
+ │   │   ├── circularqueue
+ │   │   │   ├── CircularQueue.java
+ │   │   │   └── Main.java
+ │   │   └── getrecentreqcounter
+ │   │       ├── Main.java
+ │   │       └── RecentCounter.java
+ │   ├── stackalgorithm-----栈表型算法
+ │   │   └── bracketvaild
+ │   │       ├── BracketVaild.java
+ │   │       └── Main.java
+ │   ├── stringalgorithm-----字符串型算法
+ │   │   ├── longestpalindrome
+ │   │   │   └── Main.java
+ │   │   └── norepeatlongestsubstrlength
+ │   │       └── Main.java
+ │   └── test
+ │       └── Main.java
+ ├── datastructure
+ │   ├── linknode
+ │   │   ├── linknodemiddle
+ │   │   │   └── Main.java
+ │   │   └── linknodereverse
+ │   │       └── Main.java
+ │   ├── queue
+ │   │   ├── Main.java
+ │   │   ├── arrqueue
+ │   │   │   └── ArrayQueue.java
+ │   │   └── linknodequeue
+ │   │       └── LinkNodeQueue.java
+ │   └── sort
+ │       ├── bubblesort
+ │       │   └── Main.java
+ │       ├── insertsort
+ │       │   └── Main.java
+ │       └── selectsort
+ │           └── Main.java
+ └── translation
+     └── multithread
+         └── Semaphore.md
+           
+            
      ```  
