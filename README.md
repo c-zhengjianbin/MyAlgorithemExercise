@@ -38,6 +38,8 @@
 * ### ☘️涉及Java 类文档翻译
      * 多线程
        * [Semaphore](src/main/java/com/zhengjianbin/translation/multithread/Semaphore.md)
+       * [CountDownLatch](src/main/java/com/zhengjianbin/translation/multithread/CountDownLatch.md)
+
 
 * ### ☘️数据结构打靶场
      * 链表类型
