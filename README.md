@@ -39,7 +39,7 @@
      * 多线程
        * [Semaphore](src/main/java/com/zhengjianbin/translation/multithread/Semaphore.md)
        * [CountDownLatch](src/main/java/com/zhengjianbin/translation/multithread/CountDownLatch.md)
-
+       
 
 * ### ☘️数据结构打靶场
      * 链表类型
@@ -53,6 +53,8 @@
        * [冒泡排序](src/main/java/com/zhengjianbin/datastructure/sort/bubblesort/Main.java)
        * [插入排序](src/main/java/com/zhengjianbin/datastructure/sort/insertsort/Main.java)
        * [选择排序](src/main/java/com/zhengjianbin/datastructure/sort/selectsort/Main.java)
+       * [归并排序](src/main/java/com/zhengjianbin/datastructure/sort/mergesort/Main.java)
+
 
 * ### ☘️项目结构
      * 项目结构与包名注释🌴（题目、解题思路在Main.java中）。

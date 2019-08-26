@@ -12,7 +12,7 @@ public class Main {
     public static void main(String[] args){
 
         LinkNodeQueue linkNodeQueue = new LinkNodeQueue();
-        /**
+         /**
          * 测试链表队列
          */
         for(int i = 0; i < 5; i++){
