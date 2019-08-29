@@ -1,5 +1,7 @@
 package com.zhengjianbin.datastructure.sort.mergesort;
 
+import java.util.Arrays;
+
 /**
  * Created by zhengjianbin on 2019/8/26.
  */
@@ -15,11 +17,10 @@ public class Main {
      * arr(midIndex + 1...endIndex)。当startIndex == endIndex 相等时，说明无法再分。为何当startIndex == endIndex
      * 时就无法再分呢？可以画图，当数组剩两个元素时，它的startIndex == endIndex 是相等的。
      *    接下来看合并，合并涉及的逻辑：
-     *    1、考虑合并的条件是什么？前数组下标小于中间结点下标或后数组角标小于等于数组最后一个元素的角标。
-     *    2、符合上述条件后，开始比较前、后数组的元素，并写入临时数组。
-     *    3、比较前、后数组元素的条件是什么？对于前数组，它的索引不能超过中间元素下标；并且对应下标的值，小于后数组值，
+     *    1、考虑合并的条件是什么？无法再拆分时，进行合并。当，前数组下标 < 中间结点下标或后数组下标 <= 数组最后一个元素的下标。
+     *    2、比较前、后数组元素的条件是什么？对于前数组，它的索引不能超过中间元素下标；并且对应下标的值，小于后数组值，
      * 这时把前数组的值写入临时数组。反之，把后数组的元素写入数组。
-     *    4、当数组合并完后，把对应原数组下标对应的元素，替换为有序的。
+     *    3、当数组合并完后，把对应原数组下标对应的元素，替换为有序的。
      *
      * 伪代码：
      *    1、需要判断，当startIndex == endIndex 时，结束拆分数组。
@@ -40,9 +41,34 @@ public class Main {
      *
      */
     public static void main(String[] args){
-        int mid = 1 / 2;
-        System.out.println(mid);
+        int[] testData = {3,2,1,5,4,30,14,25,6,60,25,19,33,22};
+        mergeSort(testData, 0, testData.length - 1);
+        System.out.println(Arrays.toString(testData));
     }
 
+    public static void mergeSort(int[] data, int startIndex, int endIndex){
+        if(startIndex == endIndex){
+            return;
+        }
+        int mid = (startIndex + endIndex ) / 2;
+        mergeSort(data, startIndex, mid);
+        mergeSort(data, mid + 1, endIndex);
+        int[] tempArr = new int[endIndex - startIndex + 1];
+        int leftIndex = startIndex, rightIndex = mid + 1, tempIndex = 0;
+        while (leftIndex <= mid || rightIndex <= endIndex){
+            //注意：在检查左边与右边数组的元素大小时，先要判断，右边是否有元素，不然会出现角标越界。
+            if(leftIndex <= mid && (rightIndex > endIndex || data[leftIndex] < data[rightIndex])){
+                tempArr[tempIndex] = data[leftIndex];
+                leftIndex++;
+            }else{
+                tempArr[tempIndex] = data[rightIndex];
+                rightIndex++;
+            }
+            tempIndex++;
+        }
+        for(int i = startIndex; i <= endIndex; i++){
+            data[i] = tempArr[i - startIndex];
+        }
+    }
 
 }
