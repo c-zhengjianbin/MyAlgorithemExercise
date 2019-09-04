@@ -1,5 +1,7 @@
 package com.zhengjianbin.datastructure.sort.quicksort;
 
+import java.util.Arrays;
+
 /**
  * Created by zhengjianbin on 2019/9/3.
  */
@@ -36,8 +38,38 @@ public class Main {
      *    6、循环结束后，说明已经找到合适的pivot 合适的位置。将它与i 的值进行替换。
      *
      */
-    public static void main(){
+    public static void main(String[] args){
+        int[] testData = {3,2,1,5,4,30,14};
+        quickSort(testData, 0, testData.length - 1);
+        System.out.println(Arrays.toString(testData));
+    }
 
+    public static void quickSort(int[] data,int startIndex, int endIndex){
+        if(startIndex >= endIndex){
+            return;
+        }
+        int pivotIndex = partition(data, startIndex, endIndex);
+        quickSort(data, startIndex, pivotIndex - 1);
+        quickSort(data, pivotIndex + 1, endIndex);
+    }
+
+    public static int partition(int[] data,int startIndex, int endIndex){
+        int pivot = data[endIndex];
+        int i = startIndex;
+        for(int j = startIndex; j <= endIndex - 1; j++){
+            if(data[j] < pivot){
+                swap(data, i, j);
+                i++;
+            }
+        }
+        swap(data, i, endIndex);
+        return i;
+    }
+
+    public static void swap(int[] data, int oldIndex, int newIndex){
+        int temp = data[oldIndex];
+        data[oldIndex] = data[newIndex];
+        data[newIndex] = temp;
     }
 
 }
