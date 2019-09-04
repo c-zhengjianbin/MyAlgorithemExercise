@@ -38,7 +38,7 @@ public class Main {
      *    6、循环结束后，说明已经找到合适的pivot 合适的位置。将它与i 的值进行替换。
      *
      * 注意：
-     *    1、在递推公式中，为何quickSort(s,pivotIndex - 1) 、quickSort(pivotIndex + 1) ？不是(s, pivotIndex)、
+     *    1、在递推公式中，为何是quickSort(s,pivotIndex - 1) 、quickSort(pivotIndex + 1) ？而不是(s, pivotIndex)、
      * (pivotIndex + 1, e)呢？
      *    --回答：因为pivot 元素既不属于左边也不属于右边。在进行递归时，需要将pivot 对应的index 剔除。左边通过减1，右边
      * 通过加1 来实现。
