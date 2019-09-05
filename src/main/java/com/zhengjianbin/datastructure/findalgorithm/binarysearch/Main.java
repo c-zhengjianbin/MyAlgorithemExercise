@@ -42,7 +42,7 @@ public class Main {
             return index;
         }
         while(startIndex <= endIndex){
-            int midIndex = (startIndex + endIndex) / 2;
+            int midIndex = (startIndex + endIndex) >> 1;
             int midData = data[midIndex];
             System.out.println("获取到的midData:"+midData);
             //选择右区间
