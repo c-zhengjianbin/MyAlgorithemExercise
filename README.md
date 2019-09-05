@@ -56,7 +56,7 @@
        * [归并排序](src/main/java/com/zhengjianbin/datastructure/sort/mergesort/Main.java)
        * [快速排序](src/main/java/com/zhengjianbin/datastructure/sort/quicksort/Main.java)
      * 查找算法
-       * [二分查找](src/main/java/com/zhengjianbin/datastructure/findalgorithm/binarysearch/M``ain.java)
+       * [二分查找](src/main/java/com/zhengjianbin/datastructure/findalgorithm/binarysearch/Main.java)
         
 * ### ☘️项目结构
      * 项目结构与包名注释🌴（题目、解题思路在Main.java中）。
